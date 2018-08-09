@@ -1,9 +1,9 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    @cart = cart
   end
 
   def add
-
+    @cart << params[:product]
   end
 end
