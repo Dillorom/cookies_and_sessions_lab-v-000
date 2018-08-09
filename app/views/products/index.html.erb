@@ -9,7 +9,7 @@
 
 <h1> Add a Product </h1>
 <%= form_tag('/', method: :post) do%>
-<%= label :product %>
-<%= text_field :product %>
-<%= submit "Add to Cart" %>
+<%= label_tag :product %>
+<%= text_field_tag :product %>
+<%= submit_tag "Add to Cart" %>
 <% end %>
