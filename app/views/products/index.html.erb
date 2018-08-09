@@ -7,6 +7,7 @@
 <% end %>
 </ul>
 
+<h1> Add a Product </h1>
 <%= form_for @product, url: {action: "add"} do |f|%>
 <%= f.label :product %>
 <%= f.text_field :product %>
