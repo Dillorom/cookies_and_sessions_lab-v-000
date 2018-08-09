@@ -1,6 +1,8 @@
 <h1> Products </h1>
-<% if @cart %>
+<ul>
+  <% if @cart %>
   <% @cart.each do |item| %>
-  <%= item %>
+  <li><%= item %></li>
   <% end %>
 <% end %>
+</ul>
