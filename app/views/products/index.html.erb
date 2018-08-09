@@ -8,7 +8,7 @@
 </ul>
 
 <h1> Add a Product </h1>
-<%= form_for @product, url: {action: "add"} do |f|%>
+<%= form_tag('/', method: :post) do%>
 <%= f.label :product %>
 <%= f.text_field :product %>
 <%= f.submit "Add to Cart" %>
