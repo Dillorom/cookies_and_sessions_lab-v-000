@@ -6,3 +6,9 @@
   <% end %>
 <% end %>
 </ul>
+
+<%= form_for @product do |f|%>
+<%= f.label :product %>
+<%= f.text_field :product %>
+<%= f.submit as "Add to Cart" %>
+<% end %>
