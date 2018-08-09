@@ -4,9 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def cart
-    #cart = session[:cart] || []
-    session[:cart_id] = @cart.id
-    @cart = session[:cart_id]
+    cart = session[:cart] || []
+    cart << @item.id
+    # session[:cart_id] = @cart.id
+    # @cart = session[:cart_id]
   end
 
   # def get :'/'
