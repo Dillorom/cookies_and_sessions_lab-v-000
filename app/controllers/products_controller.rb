@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
     @cart = cart
   end
 
-  def add
+  def new
     cart << params[:product]
   end
 end
