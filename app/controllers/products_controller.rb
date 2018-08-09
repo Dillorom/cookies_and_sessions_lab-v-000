@@ -3,8 +3,7 @@ class ProductsController < ApplicationController
     @cart = cart
   end
 
-  def new
-    binding.pry
+  def add
     cart << params[:product]
   end
 end
