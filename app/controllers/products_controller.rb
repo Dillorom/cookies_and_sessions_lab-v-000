@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-  
+
     cart << params[:product]
       binding.pry
   end
